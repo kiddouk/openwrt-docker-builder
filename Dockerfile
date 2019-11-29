@@ -23,4 +23,4 @@ RUN ./scripts/feeds update -a
 RUN ./scripts/feeds install -a
 COPY .config .config
 RUN make tools/install -j4
-
+RUN make toolchain/install -j4
